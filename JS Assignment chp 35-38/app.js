@@ -43,12 +43,36 @@
 // }
 
 //! QUESTION NO6
-function lub(){
-    var num1 = +prompt("Enter Starting NUMBER!");
-    var num2 = +prompt("Enter ENDING NUMBER!");
-    
-    for(let i = num1; i <=num2; i++){
-        document.write(i + '<br>' )
+// function lub(){
+//     var num1 = +prompt("Enter Starting NUMBER!");
+//     var num2 = +prompt("Enter ENDING NUMBER!");
+//     for(let i = num1; i <=num2; i++){
+//         document.write(i + '<br>' )
+//     }
+// }
+// lub();
+
+//! QUESTION NO7
+// function out(   ){
+//     function squ() {
+//         var bas = +prompt("ENTER BASE OF TRIANGLE.")
+//         var per = +prompt("ENTER PERPENDICULAR OF TRIANGLE.")
+//         var hyp = (bas * 2) + (per * 2);
+//         return hyp;
+//     }
+//     let hypo = squ() * 2
+//     document.write(hypo)
+// }
+// out();
+
+//! QUESTION NO8
+function capletter(str){
+
+    let letter = str.split(' ');
+    for(let i = 0; i < letter.length; i++){
+        letter[i] = letter[i].charAt(0).toUpperCase() + letter[i].slice(1);
     }
+    return letter.join(' ');
 }
-lub();
+let result = capletter("i am farasat")
+document.write(result)
